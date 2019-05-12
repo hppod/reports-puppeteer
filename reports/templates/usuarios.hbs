@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Relatório de usuários com puppeteer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body>
+    <h4 style="margin-top: 10px; margin-bottom: 6px; text-align: center;">Relatório de usuários</h4>
+    <table class="striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>D. Nascimento</th>
+                <th>CPF</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{!-- Laço "for" no objeto usuarios, que passamos na função compile que foi implementada no controller --}}
+            {{#each usuarios}}
+            <tr>
+                {{!-- Acessando o atributo do objeto usuarios --}}
+                <td>{{ID}}</td>
+                <td>{{NOME}}</td>
+                <td>{{EMAIL}}</td>
+                <td>{{NASCIMENTO}}</td>
+                <td>{{cpf CPF}}</td>
+            </tr>
+            {{!-- Fechando o laço "for" --}}
+            {{/each}}
+        </tbody>
+    </table>
+</body>
+
+</html>
+
