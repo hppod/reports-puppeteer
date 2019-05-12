@@ -22,8 +22,9 @@
     "express": "^4.16.4",
     "fs-extra": "^8.0.0",
     "handlebars": "^4.1.2",
-    "puppeteer": "^1.15.0",
+    "mysql2": "^1.6.5",
     "nodemon": "^1.18.10",
+    "puppeteer": "^1.15.0",
     "sequelize": "^5.8.6"
   }
 }
